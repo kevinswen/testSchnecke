@@ -11,7 +11,7 @@ public class Hauptprogramm {
 		
 		Wettbüro wettbüro =new Wettbüro(rennen,1.5);
 		
-		wettbüro.wetteAnnehmen("Harry", 100, "kh");
+		wettbüro.wetteAnnehmen("Garry", 50, "Kevin");
 		wettbüro.print();
 		wettbüro.rennenDurchführen();
 		wettbüro.print();

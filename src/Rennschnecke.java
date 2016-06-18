@@ -5,13 +5,13 @@ public class Rennschnecke {
 
 	private String name;
 	private String rasse;
-	private int maxSp;
+	private int maxSpeed;
 	private int strecke;
 
-	public Rennschnecke(String name, String rasse, int maxSp, int strecke) {
+	public Rennschnecke(String name, String rasse, int maxSpeed, int strecke) {
 		this.name =name;
 		this.rasse=rasse;
-		this.maxSp=maxSp;
+		this.maxSpeed=maxSpeed;
 	}
 	public String getName() {
 		return name;
@@ -20,7 +20,7 @@ public class Rennschnecke {
 		return rasse;
 	}
 	public int getMaxSp() {
-		return maxSp;
+		return maxSpeed;
 	}
 	public int getStrecke() {
 		return strecke;
@@ -29,10 +29,10 @@ public class Rennschnecke {
 	//Maximalgeschwindigkeit weiterkriechen
 	public void krieche() {
 		Random rnd = new Random();
-		strecke=strecke + (1+rnd.nextInt(maxSp));
+		strecke=strecke + (1+rnd.nextInt(maxSpeed));
 	}
 	//Erstellt aus den Daten einer Schnecke einen String und gibt ihn zurück
 	public String toString(){
-		return String.format("Name:\t"+name+"\nRasse:\t"+rasse+"\nHöchstgeschwindigkeit:\t"+maxSp+"\nStrecke:\t"+strecke);
+		return String.format("Name:\t"+name+"\nRasse:\t"+rasse+"\nHöchstgeschwindigkeit:\t"+maxSpeed+"\nStrecke:\t"+strecke);
 	}
 }
