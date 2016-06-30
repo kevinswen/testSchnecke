@@ -13,7 +13,7 @@ public class Hauptprogramm {
 		
 		wettbüro.wetteAnnehmen("Garry", 100, "Kevin");	//Test
 		wettbüro.print();								// Noch ein Test
-		wettbüro.rennenDurchführen();
+		wettbüro.rennenDurchführen();	//änderung
 		wettbüro.print();
 	}
 }
