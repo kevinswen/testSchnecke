@@ -11,8 +11,8 @@ public class Hauptprogramm {
 		
 		Wettbüro wettbüro =new Wettbüro(rennen,1.5);
 		
-		wettbüro.wetteAnnehmen("Garry", 100, "Kevin");	//Änderung zum Testen von Github
-		wettbüro.print();
+		wettbüro.wetteAnnehmen("Garry", 100, "Kevin");	//Test
+		wettbüro.print();								// Noch ein Test
 		wettbüro.rennenDurchführen();
 		wettbüro.print();
 	}
