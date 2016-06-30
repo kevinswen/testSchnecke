@@ -17,11 +17,11 @@ public class RennschneckeTest extends TestCase {
 	}
 	//Prüft ob im return wert der Methode getName auch etwas enthalten ist
 	public void testCheckGetName() throws Exception{
-		assertNotNull(testObject.getName());
+		assertTrue(testObject.getName()=="test");
 	}
 	//Prüft ob im return wert der Methode getRasse auch etwas enthalten ist
 	public void testCheckGetRasse() throws Exception{
-		assertNotNull(testObject.getRasse());
+		assertTrue(testObject.getRasse()=="test");
 	}
 	//Prüft ob der return wert der Methode getMaxSp den richtigen wert
 	//zurückgibt
