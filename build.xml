@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="compile" name="Rennschnecke_Example">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="JUnit 3.libraryclasspath">
+        <pathelement location="../../../../usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar"/>
+    </path>
+    <path id="Rennschnecke_Example.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 3.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="compile"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="run">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennenTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="Wettbüro_WetteTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Wettbüro_WetteTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennschneckeTest.testCreateRennschneckeTestObject">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennschneckeTest.setUp">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennenTest.testToString">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="AllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="AllTests" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="Hauptprogramm">
+        <java classname="Hauptprogramm" failonerror="true" fork="yes">
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </java>
+    </target>
+    <target name="RennenTest.testCheckKonstruktor">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennschneckeTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennenTest.testErmittleGewinner">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
