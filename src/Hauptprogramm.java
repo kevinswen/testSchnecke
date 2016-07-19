@@ -15,6 +15,5 @@ public class Hauptprogramm {
 		wettbüro.print();								
 		wettbüro.rennenDurchführen();	
 		wettbüro.print();
-		System.out.println("Test");
 	}
 }
