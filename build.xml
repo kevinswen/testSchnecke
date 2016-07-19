@@ -85,7 +85,7 @@
     <target name="AllTests">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
+              <formatter type="xml"/>
             <test name="AllTests" todir="${junit.output.dir}"/>
             <classpath refid="Rennschnecke_Example.classpath"/>
         </junit>
