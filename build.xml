@@ -24,7 +24,7 @@
         <delete dir="bin"/>
     </target>
     <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="compile"/>
+    <target depends="build-subprojects,build-project,junitreport" name="compile"/>
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
@@ -42,7 +42,7 @@
             <classpath refid="Rennschnecke_Example.classpath"/>
         </junit>
     </target>
-    <target name="RennenTest">
+    <target name="RennenTest">	
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -119,7 +119,7 @@
             <classpath refid="Rennschnecke_Example.classpath"/>
         </junit>
     </target>
-    <target name="junitreport">
+    <target depends="RennenTest.testErmittleGewinner,RennschneckeTest,RennenTest.testCheckKonstruktor,Hauptprogramm,RennenTest.testToString,RennschneckeTest.setUp,RennschneckeTest.testCreateRennschneckeTestObject,RennenTest" name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
                 <include name="TEST-*.xml"/>
