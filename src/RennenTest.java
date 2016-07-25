@@ -41,6 +41,6 @@ public class RennenTest extends TestCase {
 	//vorhanden ist nachdem das Rennen durchgeführt wurde
 	public void testDurchführen() throws Exception{
 		testObject.durchführen();
-		assertTrue(testObject.ermittleGewinner()==null); // Wieder zu False ändern
+		assertFalse(testObject.ermittleGewinner()==null); 
 	}
 }
