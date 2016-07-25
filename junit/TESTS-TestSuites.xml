@@ -1,48 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="kevin-VirtualBox" id="0" name="RennenTest" package="" skipped="0" tests="6" time="0.259" timestamp="2016-07-19T18:22:03">
+  <testsuite errors="0" failures="0" hostname="kevin-VirtualBox" id="0" name="RennenTest" package="" skipped="0" tests="6" time="0.071" timestamp="2016-07-25T06:33:36">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
-          <property name="env.JENKINS_SERVER_COOKIE" value="8c7779ff91af8a79" />
+          <property name="env.IM_CONFIG_PHASE" value="1" />
 
           <property name="sun.java.launcher" value="SUN_STANDARD" />
 
+          <property name="eclipse.pdebuild.templates" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/templates//" />
+
+          <property name="env.QT_IM_MODULE" value="ibus" />
+
           <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="env.GTK2_MODULES" value="overlay-scrollbar" />
 
           <property name="os.name" value="Linux" />
 
+          <property name="env.UPSTART_SESSION" value="unix:abstract=/com/ubuntu/upstart-session/1000/1265" />
+
           <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes" />
 
-          <property name="env.PWD" value="/home/kevin/workspace/Rennschnecke_Example" />
+          <property name="env.PWD" value="/home/kevin" />
+
+          <property name="sun.desktop" value="gnome" />
 
           <property name="env.LANG" value="de_DE.UTF-8" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="/usr/share/ant" />
+          <property name="ant.home" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730" />
 
           <property name="java.runtime.version" value="1.8.0_91-b14" />
 
           <property name="ant.file.Rennschnecke_Example" value="/home/kevin/workspace/Rennschnecke_Example/build.xml" />
 
-          <property name="env.BUILD_DISPLAY_NAME" value="#50" />
+          <property name="env.GTK_IM_MODULE" value="ibus" />
 
-          <property name="user.name" value="jenkins" />
+          <property name="env.QT_LINUX_ACCESSIBILITY_ALWAYS_ON" value="1" />
 
-          <property name="env._" value="/usr/bin/daemon" />
+          <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path" />
 
-          <property name="env.USER" value="jenkins" />
+          <property name="env.UPSTART_EVENTS" value="xsession started" />
+
+          <property name="env.XDG_VTNR" value="7" />
+
+          <property name="env.DISPLAY" value=":0" />
+
+          <property name="user.name" value="kevin" />
+
+          <property name="env.QT4_IM_MODULE" value="xim" />
+
+          <property name="env.USER" value="kevin" />
 
           <property name="env.SHELL" value="/bin/bash" />
 
+          <property name="env.DESKTOP_SESSION" value="ubuntu" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop" />
+
           <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
 
-          <property name="env.PATH" value="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin" />
+          <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
 
           <property name="user.language" value="de" />
 
+          <property name="env.XDG_SESSION_DESKTOP" value="ubuntu" />
+
           <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64" />
+
+          <property name="env.UPSTART_JOB" value="unity7" />
 
           <property name="ant.project.default-target" value="compile" />
 
@@ -52,9 +82,11 @@
 
           <property name="user.timezone" value="" />
 
-          <property name="env.NODE_NAME" value="master" />
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-oblZ7WsSSa" />
 
           <property name="sun.arch.data.model" value="64" />
+
+          <property name="env.COMPIZ_CONFIG_PROFILE" value="ubuntu" />
 
           <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed" />
 
@@ -66,17 +98,21 @@
 
           <property name="file.encoding.pkg" value="sun.io" />
 
-          <property name="env.SHLVL" value="1" />
+          <property name="env.SHLVL" value="0" />
 
           <property name="file.separator" value="/" />
 
           <property name="java.specification.name" value="Java Platform API Specification" />
 
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
           <property name="java.class.version" value="52.0" />
+
+          <property name="env.GDMSESSION" value="ubuntu" />
 
           <property name="user.country" value="DE" />
 
-          <property name="env.BUILD_NUMBER" value="50" />
+          <property name="env.GNOME_KEYRING_PID" value="" />
 
           <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre" />
 
@@ -84,7 +120,7 @@
 
           <property name="java.vm.info" value="mixed mode" />
 
-          <property name="env.LOGNAME" value="jenkins" />
+          <property name="env.LOGNAME" value="kevin" />
 
           <property name="ant.file" value="/home/kevin/workspace/Rennschnecke_Example/build.xml" />
 
@@ -92,21 +128,27 @@
 
           <property name="env.J2REDIR" value="/usr/lib/jvm/java-8-oracle/jre" />
 
-          <property name="env.HUDSON_COOKIE" value="87e00b6e-4ef2-4bf6-91a6-d2032acb2d9f" />
-
           <property name="path.separator" value=":" />
 
           <property name="java.vm.version" value="25.91-b14" />
 
-          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+          <property name="env.UPSTART_INSTANCE" value="" />
+
+          <property name="env.LANGUAGE" value="de_DE" />
+
+          <property name="ant.library.dir" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730/lib" />
+
+          <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
 
           <property name="junit.output.dir" value="junit" />
 
           <property name="env.QT_QPA_PLATFORMTHEME" value="appmenu-qt5" />
 
-          <property name="env.JOB_NAME" value="Rennschnecke-Job" />
-
           <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-8-oracle" />
+
+          <property name="env.XDG_SESSION_TYPE" value="x11" />
+
+          <property name="env.SESSIONTYPE" value="gnome-session" />
 
           <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
 
@@ -114,13 +156,17 @@
 
           <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
 
-          <property name="env.BUILD_TAG" value="jenkins-Rennschnecke-Job-50" />
+          <property name="env.XMODIFIERS" value="@im=ibus" />
 
-          <property name="user.home" value="/var/lib/jenkins" />
+          <property name="eclipse.pdebuild.scripts" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/scripts//" />
+
+          <property name="env.GDM_LANG" value="de_DE" />
 
           <property name="target" value="1.5" />
 
-          <property name="env.JENKINS_HOME" value="/var/lib/jenkins" />
+          <property name="user.home" value="/home/kevin" />
+
+          <property name="env.JOB" value="unity-settings-daemon" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
@@ -128,57 +174,71 @@
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
-          <property name="env.HUDSON_HOME" value="/var/lib/jenkins" />
-
-          <property name="env.HUDSON_SERVER_COOKIE" value="8c7779ff91af8a79" />
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/usr/share/applications/eclipse.desktop" />
 
           <property name="java.vm.vendor" value="Oracle Corporation" />
 
+          <property name="env.XDG_SEAT" value="seat0" />
+
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennenTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennenTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher818624201443210705.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit3659532302763499847.properties" />
-
-          <property name="java.class.path" value="/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+          <property name="java.class.path" value="/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/java/ant-1.9.6.jar:/usr/share/java/ant-junit-1.9.6.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on July 8 2015" />
 
-          <property name="env.EXECUTOR_NUMBER" value="0" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennenTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennenTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher7698955153048050075.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit821475928181549153.properties" />
 
-          <property name="env.XDG_SESSION_ID" value="c2" />
+          <property name="env.XDG_SESSION_ID" value="c3" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+          <property name="env.QT_ACCESSIBILITY" value="1" />
 
-          <property name="ant.file.type" value="file" />
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
 
           <property name="java.vm.specification.version" value="1.8" />
 
-          <property name="sun.cpu.endian" value="little" />
-
           <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="sun.cpu.endian" value="little" />
 
           <property name="debuglevel" value="source,lines,vars" />
 
-          <property name="env.HOME" value="/var/lib/jenkins" />
+          <property name="env.HOME" value="/home/kevin" />
+
+          <property name="env.ANT_HOME" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730" />
+
+          <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+
+          <property name="eclipse.pdebuild.home" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/.//" />
 
           <property name="java.io.tmpdir" value="/tmp" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
+          <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh" />
+
+          <property name="env.CLUTTER_IM_MODULE" value="xim" />
+
           <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
 
           <property name="os.arch" value="amd64" />
 
-          <property name="env.XDG_RUNTIME_DIR" value="/run/user/121" />
+          <property name="env.INSTANCE" value="" />
+
+          <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
 
           <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
 
-          <property name="env.BUILD_ID" value="50" />
-
           <property name="user.dir" value="/home/kevin/workspace/Rennschnecke_Example" />
 
-          <property name="env.GIT_BRANCH" value="origin/master" />
+          <property name="env.XAUTHORITY" value="/home/kevin/.Xauthority" />
+
+          <property name="env.SESSION" value="ubuntu" />
+
+          <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path" />
+
+          <property name="env.GTK_MODULES" value="gail:atk-bridge:unity-gtk-module" />
 
           <property name="env.J2SDKDIR" value="/usr/lib/jvm/java-8-oracle" />
 
@@ -186,100 +246,128 @@
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="env.GIT_COMMIT" value="8a6df949591f2633b8a965f8f857fa4a3a759417" />
-
-          <property name="env.GIT_URL" value="https://github.com/kevinswen/testSchnecke.git" />
+          <property name="env.XDG_GREETER_DATA_DIR" value="/var/lib/lightdm-data/kevin" />
 
           <property name="basedir" value="/home/kevin/workspace/Rennschnecke_Example" />
 
           <property name="ant.java.version" value="1.8" />
 
-          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
-
-          <property name="env.GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="74d749aa10ceccb2bce7baac1f4770c1c36bbdf4" />
+          <property name="ant.core.lib" value="/usr/share/java/ant-1.9.6.jar" />
 
           <property name="source" value="1.5" />
 
           <property name="file.encoding" value="UTF-8" />
 
-          <property name="env.MAIL" value="/var/mail/jenkins" />
+          <property name="env.COMPIZ_BIN_PATH" value="/usr/bin/" />
 
-          <property name="env.WORKSPACE" value="/var/lib/jenkins/jobs/Rennschnecke-Job/workspace" />
+          <property name="env.GPG_AGENT_INFO" value="/home/kevin/.gnupg/S.gpg-agent:0:1" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="2566" />
 
           <property name="java.specification.version" value="1.8" />
 
-          <property name="ant.project.invoked-targets" value="compile" />
+          <property name="env.GNOME_KEYRING_CONTROL" value="" />
 
-          <property name="env.GIT_PREVIOUS_COMMIT" value="74d749aa10ceccb2bce7baac1f4770c1c36bbdf4" />
+          <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg" />
 
-          <property name="env.NODE_LABELS" value="master" />
+          <property name="ant.project.invoked-targets" value="RennenTest.testErmittleGewinner" />
 
       </properties>
 
-      <testcase classname="RennenTest" name="testToString" time="0.007" />
+      <testcase classname="RennenTest" name="testErmittleGewinner" time="0.002" />
 
-      <testcase classname="RennenTest" name="testErmittleGewinner" time="0.004" />
+      <testcase classname="RennenTest" name="testToString" time="0.003" />
 
-      <testcase classname="RennenTest" name="testLasseSchneckenKriechen" time="0.001" />
+      <testcase classname="RennenTest" name="testLasseSchneckenKriechen" time="0.0" />
 
       <testcase classname="RennenTest" name="testKonstruktor" time="0.0" />
 
       <testcase classname="RennenTest" name="testRemoveRennschnecke" time="0.0" />
 
-      <testcase classname="RennenTest" name="testDurchführen" time="0.002" />
+      <testcase classname="RennenTest" name="testDurchführen" time="0.003" />
 
       <system-out><![CDATA[Gewinner ist	Name:	Test
 Rasse:	Test
 Höchstgeschwindigkeit:	1000
-Strecke:	10010
+Strecke:	10597
 ]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="kevin-VirtualBox" id="1" name="RennschneckeTest" package="" skipped="0" tests="8" time="0.141" timestamp="2016-07-19T18:22:02">
+  <testsuite errors="0" failures="0" hostname="kevin-VirtualBox" id="1" name="RennschneckeTest" package="" skipped="0" tests="8" time="0.068" timestamp="2016-07-25T06:33:36">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
-          <property name="env.JENKINS_SERVER_COOKIE" value="8c7779ff91af8a79" />
+          <property name="env.IM_CONFIG_PHASE" value="1" />
 
           <property name="sun.java.launcher" value="SUN_STANDARD" />
 
+          <property name="eclipse.pdebuild.templates" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/templates//" />
+
+          <property name="env.QT_IM_MODULE" value="ibus" />
+
           <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="env.GTK2_MODULES" value="overlay-scrollbar" />
 
           <property name="os.name" value="Linux" />
 
+          <property name="env.UPSTART_SESSION" value="unix:abstract=/com/ubuntu/upstart-session/1000/1265" />
+
           <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes" />
 
-          <property name="env.PWD" value="/home/kevin/workspace/Rennschnecke_Example" />
+          <property name="env.PWD" value="/home/kevin" />
+
+          <property name="sun.desktop" value="gnome" />
 
           <property name="env.LANG" value="de_DE.UTF-8" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="/usr/share/ant" />
+          <property name="ant.home" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730" />
 
           <property name="java.runtime.version" value="1.8.0_91-b14" />
 
           <property name="ant.file.Rennschnecke_Example" value="/home/kevin/workspace/Rennschnecke_Example/build.xml" />
 
-          <property name="env.BUILD_DISPLAY_NAME" value="#50" />
+          <property name="env.GTK_IM_MODULE" value="ibus" />
 
-          <property name="user.name" value="jenkins" />
+          <property name="env.QT_LINUX_ACCESSIBILITY_ALWAYS_ON" value="1" />
 
-          <property name="env._" value="/usr/bin/daemon" />
+          <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu.default.path" />
 
-          <property name="env.USER" value="jenkins" />
+          <property name="env.UPSTART_EVENTS" value="xsession started" />
+
+          <property name="env.XDG_VTNR" value="7" />
+
+          <property name="env.DISPLAY" value=":0" />
+
+          <property name="user.name" value="kevin" />
+
+          <property name="env.QT4_IM_MODULE" value="xim" />
+
+          <property name="env.USER" value="kevin" />
 
           <property name="env.SHELL" value="/bin/bash" />
 
+          <property name="env.DESKTOP_SESSION" value="ubuntu" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop" />
+
           <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
 
-          <property name="env.PATH" value="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin" />
+          <property name="env.PATH" value="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
 
           <property name="user.language" value="de" />
 
+          <property name="env.XDG_SESSION_DESKTOP" value="ubuntu" />
+
           <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64" />
+
+          <property name="env.UPSTART_JOB" value="unity7" />
 
           <property name="ant.project.default-target" value="compile" />
 
@@ -289,9 +377,11 @@ Strecke:	10010
 
           <property name="user.timezone" value="" />
 
-          <property name="env.NODE_NAME" value="master" />
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-oblZ7WsSSa" />
 
           <property name="sun.arch.data.model" value="64" />
+
+          <property name="env.COMPIZ_CONFIG_PROFILE" value="ubuntu" />
 
           <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed" />
 
@@ -303,17 +393,21 @@ Strecke:	10010
 
           <property name="file.encoding.pkg" value="sun.io" />
 
-          <property name="env.SHLVL" value="1" />
+          <property name="env.SHLVL" value="0" />
 
           <property name="file.separator" value="/" />
 
           <property name="java.specification.name" value="Java Platform API Specification" />
 
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
           <property name="java.class.version" value="52.0" />
+
+          <property name="env.GDMSESSION" value="ubuntu" />
 
           <property name="user.country" value="DE" />
 
-          <property name="env.BUILD_NUMBER" value="50" />
+          <property name="env.GNOME_KEYRING_PID" value="" />
 
           <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre" />
 
@@ -321,7 +415,7 @@ Strecke:	10010
 
           <property name="java.vm.info" value="mixed mode" />
 
-          <property name="env.LOGNAME" value="jenkins" />
+          <property name="env.LOGNAME" value="kevin" />
 
           <property name="ant.file" value="/home/kevin/workspace/Rennschnecke_Example/build.xml" />
 
@@ -329,21 +423,27 @@ Strecke:	10010
 
           <property name="env.J2REDIR" value="/usr/lib/jvm/java-8-oracle/jre" />
 
-          <property name="env.HUDSON_COOKIE" value="87e00b6e-4ef2-4bf6-91a6-d2032acb2d9f" />
-
           <property name="path.separator" value=":" />
 
           <property name="java.vm.version" value="25.91-b14" />
 
-          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+          <property name="env.UPSTART_INSTANCE" value="" />
+
+          <property name="env.LANGUAGE" value="de_DE" />
+
+          <property name="ant.library.dir" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730/lib" />
+
+          <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
 
           <property name="junit.output.dir" value="junit" />
 
           <property name="env.QT_QPA_PLATFORMTHEME" value="appmenu-qt5" />
 
-          <property name="env.JOB_NAME" value="Rennschnecke-Job" />
-
           <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-8-oracle" />
+
+          <property name="env.XDG_SESSION_TYPE" value="x11" />
+
+          <property name="env.SESSIONTYPE" value="gnome-session" />
 
           <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
 
@@ -351,13 +451,17 @@ Strecke:	10010
 
           <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
 
-          <property name="env.BUILD_TAG" value="jenkins-Rennschnecke-Job-50" />
+          <property name="env.XMODIFIERS" value="@im=ibus" />
 
-          <property name="user.home" value="/var/lib/jenkins" />
+          <property name="eclipse.pdebuild.scripts" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/scripts//" />
+
+          <property name="env.GDM_LANG" value="de_DE" />
 
           <property name="target" value="1.5" />
 
-          <property name="env.JENKINS_HOME" value="/var/lib/jenkins" />
+          <property name="user.home" value="/home/kevin" />
+
+          <property name="env.JOB" value="unity-settings-daemon" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
@@ -365,57 +469,71 @@ Strecke:	10010
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
-          <property name="env.HUDSON_HOME" value="/var/lib/jenkins" />
-
-          <property name="env.HUDSON_SERVER_COOKIE" value="8c7779ff91af8a79" />
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/usr/share/applications/eclipse.desktop" />
 
           <property name="java.vm.vendor" value="Oracle Corporation" />
 
+          <property name="env.XDG_SEAT" value="seat0" />
+
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennschneckeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennschneckeTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher1880843758851645231.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit3971644392404183597.properties" />
-
-          <property name="java.class.path" value="/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+          <property name="java.class.path" value="/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/java/ant-1.9.6.jar:/usr/share/java/ant-junit-1.9.6.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on July 8 2015" />
 
-          <property name="env.EXECUTOR_NUMBER" value="0" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennschneckeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennschneckeTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher3406346112407482212.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit5076919948455608455.properties" />
 
-          <property name="env.XDG_SESSION_ID" value="c2" />
+          <property name="env.XDG_SESSION_ID" value="c3" />
 
           <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
 
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+          <property name="env.QT_ACCESSIBILITY" value="1" />
 
-          <property name="ant.file.type" value="file" />
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
 
           <property name="java.vm.specification.version" value="1.8" />
 
-          <property name="sun.cpu.endian" value="little" />
-
           <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="sun.cpu.endian" value="little" />
 
           <property name="debuglevel" value="source,lines,vars" />
 
-          <property name="env.HOME" value="/var/lib/jenkins" />
+          <property name="env.HOME" value="/home/kevin" />
+
+          <property name="env.ANT_HOME" value="/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730" />
+
+          <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+
+          <property name="eclipse.pdebuild.home" value="/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/.//" />
 
           <property name="java.io.tmpdir" value="/tmp" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
+          <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh" />
+
+          <property name="env.CLUTTER_IM_MODULE" value="xim" />
+
           <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
 
           <property name="os.arch" value="amd64" />
 
-          <property name="env.XDG_RUNTIME_DIR" value="/run/user/121" />
+          <property name="env.INSTANCE" value="" />
+
+          <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
 
           <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
 
-          <property name="env.BUILD_ID" value="50" />
-
           <property name="user.dir" value="/home/kevin/workspace/Rennschnecke_Example" />
 
-          <property name="env.GIT_BRANCH" value="origin/master" />
+          <property name="env.XAUTHORITY" value="/home/kevin/.Xauthority" />
+
+          <property name="env.SESSION" value="ubuntu" />
+
+          <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu.mandatory.path" />
+
+          <property name="env.GTK_MODULES" value="gail:atk-bridge:unity-gtk-module" />
 
           <property name="env.J2SDKDIR" value="/usr/lib/jvm/java-8-oracle" />
 
@@ -423,51 +541,49 @@ Strecke:	10010
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="env.GIT_COMMIT" value="8a6df949591f2633b8a965f8f857fa4a3a759417" />
-
-          <property name="env.GIT_URL" value="https://github.com/kevinswen/testSchnecke.git" />
+          <property name="env.XDG_GREETER_DATA_DIR" value="/var/lib/lightdm-data/kevin" />
 
           <property name="basedir" value="/home/kevin/workspace/Rennschnecke_Example" />
 
           <property name="ant.java.version" value="1.8" />
 
-          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
-
-          <property name="env.GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="74d749aa10ceccb2bce7baac1f4770c1c36bbdf4" />
+          <property name="ant.core.lib" value="/usr/share/java/ant-1.9.6.jar" />
 
           <property name="source" value="1.5" />
 
           <property name="file.encoding" value="UTF-8" />
 
-          <property name="env.MAIL" value="/var/mail/jenkins" />
+          <property name="env.COMPIZ_BIN_PATH" value="/usr/bin/" />
 
-          <property name="env.WORKSPACE" value="/var/lib/jenkins/jobs/Rennschnecke-Job/workspace" />
+          <property name="env.GPG_AGENT_INFO" value="/home/kevin/.gnupg/S.gpg-agent:0:1" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="2566" />
 
           <property name="java.specification.version" value="1.8" />
 
-          <property name="ant.project.invoked-targets" value="compile" />
+          <property name="env.GNOME_KEYRING_CONTROL" value="" />
 
-          <property name="env.GIT_PREVIOUS_COMMIT" value="74d749aa10ceccb2bce7baac1f4770c1c36bbdf4" />
+          <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg" />
 
-          <property name="env.NODE_LABELS" value="master" />
+          <property name="ant.project.invoked-targets" value="RennschneckeTest" />
 
       </properties>
 
-      <testcase classname="RennschneckeTest" name="testCheckGetMaxSp" time="0.001" />
+      <testcase classname="RennschneckeTest" name="testCheckGetRasse" time="0.002" />
 
-      <testcase classname="RennschneckeTest" name="testCreateRennschneckeTestObject" time="0.007" />
+      <testcase classname="RennschneckeTest" name="testCheckGetMaxSp" time="0.002" />
+
+      <testcase classname="RennschneckeTest" name="testCheckToString" time="0.002" />
 
       <testcase classname="RennschneckeTest" name="testCheckGetName" time="0.0" />
 
-      <testcase classname="RennschneckeTest" name="testCheckKonstruktor" time="0.0" />
-
-      <testcase classname="RennschneckeTest" name="testCheckGetRasse" time="0.0" />
+      <testcase classname="RennschneckeTest" name="testCreateRennschneckeTestObject" time="0.0" />
 
       <testcase classname="RennschneckeTest" name="testCheckGetStrecke" time="0.0" />
 
-      <testcase classname="RennschneckeTest" name="testCheckKrieche" time="0.001" />
+      <testcase classname="RennschneckeTest" name="testCheckKrieche" time="0.0" />
 
-      <testcase classname="RennschneckeTest" name="testCheckToString" time="0.002" />
+      <testcase classname="RennschneckeTest" name="testCheckKonstruktor" time="0.0" />
 
       <system-out><![CDATA[]]></system-out>
 

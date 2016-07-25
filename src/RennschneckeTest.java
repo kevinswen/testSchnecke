@@ -31,14 +31,14 @@ public class RennschneckeTest extends TestCase {
 	//Prüft ob der return wert der Methode getStrecke den richtigen wert
 	//zurückgibt
 	public void testCheckGetStrecke() throws Exception{
-		assertTrue(testObject.getStrecke()==0);
+		assertTrue(testObject.getStrecke()==0); 
 	}
 	//Testet ob die Methode Krieche die Schnecken fortbewegt indem geprüft
 	//wird ob nach dem Aufruf dieser Methode die Strecke erhöt ist
 	public void testCheckKrieche() throws Exception{
 		int i = testObject.getStrecke();
 		testObject.krieche();
-		assertTrue(i<testObject.getStrecke());
+		assertTrue(i<testObject.getStrecke());		
 	}
 	//Prüft ob im zurückgegeben String überhaupt etwas enthalten ist
 	public void testCheckToString() throws Exception{

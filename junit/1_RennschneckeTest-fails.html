@@ -9,19 +9,21 @@
         
     cur = TestCases['.RennschneckeTest'] = new Array();
     
-        cur['ant.core.lib'] = '/usr/share/java/ant-1.9.6.jar';
+        cur['ant.core.lib'] = '/usr/share/ant/lib/ant.jar';
     
         cur['ant.file'] = '/home/kevin/workspace/Rennschnecke_Example/build.xml';
     
         cur['ant.file.Rennschnecke_Example'] = '/home/kevin/workspace/Rennschnecke_Example/build.xml';
     
+        cur['ant.file.type'] = 'file';
+    
         cur['ant.file.type.Rennschnecke_Example'] = 'file';
     
-        cur['ant.home'] = '/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730';
+        cur['ant.home'] = '/usr/share/ant';
     
         cur['ant.java.version'] = '1.8';
     
-        cur['ant.library.dir'] = '/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730/lib';
+        cur['ant.library.dir'] = '/usr/share/ant/lib';
     
         cur['ant.project.default-target'] = 'compile';
     
@@ -37,57 +39,37 @@
     
         cur['debuglevel'] = 'source,lines,vars';
     
-        cur['eclipse.pdebuild.home'] = '/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/.//';
+        cur['env._'] = '/usr/bin/daemon';
     
-        cur['eclipse.pdebuild.scripts'] = '/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/scripts//';
+        cur['env.BUILD_DISPLAY_NAME'] = '#101';
     
-        cur['eclipse.pdebuild.templates'] = '/usr/lib/eclipse/dropins/sdk/plugins/org.eclipse.pde.build_3.8.1.dist/templates//';
+        cur['env.BUILD_ID'] = '101';
     
-        cur['env.ANT_HOME'] = '/usr/lib/eclipse/plugins/org.apache.ant_1.8.3.v20120321-1730';
+        cur['env.BUILD_NUMBER'] = '101';
     
-        cur['env.CLUTTER_IM_MODULE'] = 'xim';
-    
-        cur['env.COMPIZ_BIN_PATH'] = '/usr/bin/';
-    
-        cur['env.COMPIZ_CONFIG_PROFILE'] = 'ubuntu';
-    
-        cur['env.DBUS_SESSION_BUS_ADDRESS'] = 'unix:abstract=/tmp/dbus-oblZ7WsSSa';
-    
-        cur['env.DEFAULTS_PATH'] = '/usr/share/gconf/ubuntu.default.path';
+        cur['env.BUILD_TAG'] = 'jenkins-Rennschnecke-Job-101';
     
         cur['env.DERBY_HOME'] = '/usr/lib/jvm/java-8-oracle/db';
     
-        cur['env.DESKTOP_SESSION'] = 'ubuntu';
+        cur['env.EXECUTOR_NUMBER'] = '1';
     
-        cur['env.DISPLAY'] = ':0';
+        cur['env.GIT_BRANCH'] = 'origin/master';
     
-        cur['env.GDM_LANG'] = 'de_DE';
+        cur['env.GIT_COMMIT'] = '786707ad09b22e28899a6dce4e06514ab7040c4e';
     
-        cur['env.GDMSESSION'] = 'ubuntu';
+        cur['env.GIT_PREVIOUS_COMMIT'] = '786707ad09b22e28899a6dce4e06514ab7040c4e';
     
-        cur['env.GIO_LAUNCHED_DESKTOP_FILE'] = '/usr/share/applications/eclipse.desktop';
+        cur['env.GIT_PREVIOUS_SUCCESSFUL_COMMIT'] = '786707ad09b22e28899a6dce4e06514ab7040c4e';
     
-        cur['env.GIO_LAUNCHED_DESKTOP_FILE_PID'] = '2566';
+        cur['env.GIT_URL'] = 'https://github.com/kevinswen/testSchnecke.git';
     
-        cur['env.GNOME_DESKTOP_SESSION_ID'] = 'this-is-deprecated';
+        cur['env.HOME'] = '/var/lib/jenkins';
     
-        cur['env.GNOME_KEYRING_CONTROL'] = '';
+        cur['env.HUDSON_COOKIE'] = 'df0c179d-48fb-4f98-b1c5-9e56fc34c1ef';
     
-        cur['env.GNOME_KEYRING_PID'] = '';
+        cur['env.HUDSON_HOME'] = '/var/lib/jenkins';
     
-        cur['env.GPG_AGENT_INFO'] = '/home/kevin/.gnupg/S.gpg-agent:0:1';
-    
-        cur['env.GTK_IM_MODULE'] = 'ibus';
-    
-        cur['env.GTK_MODULES'] = 'gail:atk-bridge:unity-gtk-module';
-    
-        cur['env.GTK2_MODULES'] = 'overlay-scrollbar';
-    
-        cur['env.HOME'] = '/home/kevin';
-    
-        cur['env.IM_CONFIG_PHASE'] = '1';
-    
-        cur['env.INSTANCE'] = '';
+        cur['env.HUDSON_SERVER_COOKIE'] = '8c7779ff91af8a79';
     
         cur['env.J2REDIR'] = '/usr/lib/jvm/java-8-oracle/jre';
     
@@ -95,81 +77,43 @@
     
         cur['env.JAVA_HOME'] = '/usr/lib/jvm/java-8-oracle';
     
-        cur['env.JOB'] = 'unity-settings-daemon';
+        cur['env.JENKINS_HOME'] = '/var/lib/jenkins';
+    
+        cur['env.JENKINS_SERVER_COOKIE'] = '8c7779ff91af8a79';
+    
+        cur['env.JOB_NAME'] = 'Rennschnecke-Job';
     
         cur['env.LANG'] = 'de_DE.UTF-8';
     
-        cur['env.LANGUAGE'] = 'de_DE';
+        cur['env.LOGNAME'] = 'jenkins';
     
-        cur['env.LOGNAME'] = 'kevin';
-    
-        cur['env.MANDATORY_PATH'] = '/usr/share/gconf/ubuntu.mandatory.path';
+        cur['env.MAIL'] = '/var/mail/jenkins';
     
         cur['env.NLSPATH'] = '/usr/dt/lib/nls/msg/%L/%N.cat';
     
-        cur['env.PATH'] = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin';
+        cur['env.NODE_LABELS'] = 'master';
     
-        cur['env.PWD'] = '/home/kevin';
+        cur['env.NODE_NAME'] = 'master';
     
-        cur['env.QT_ACCESSIBILITY'] = '1';
+        cur['env.PATH'] = '/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin';
     
-        cur['env.QT_IM_MODULE'] = 'ibus';
-    
-        cur['env.QT_LINUX_ACCESSIBILITY_ALWAYS_ON'] = '1';
+        cur['env.PWD'] = '/home/kevin/workspace/Rennschnecke_Example';
     
         cur['env.QT_QPA_PLATFORMTHEME'] = 'appmenu-qt5';
     
-        cur['env.QT4_IM_MODULE'] = 'xim';
-    
-        cur['env.SESSION'] = 'ubuntu';
-    
-        cur['env.SESSIONTYPE'] = 'gnome-session';
-    
         cur['env.SHELL'] = '/bin/bash';
     
-        cur['env.SHLVL'] = '0';
+        cur['env.SHLVL'] = '1';
     
-        cur['env.SSH_AUTH_SOCK'] = '/run/user/1000/keyring/ssh';
+        cur['env.USER'] = 'jenkins';
     
-        cur['env.UPSTART_EVENTS'] = 'xsession started';
+        cur['env.WORKSPACE'] = '/var/lib/jenkins/jobs/Rennschnecke-Job/workspace';
     
-        cur['env.UPSTART_INSTANCE'] = '';
+        cur['env.XDG_RUNTIME_DIR'] = '/run/user/121';
     
-        cur['env.UPSTART_JOB'] = 'unity7';
-    
-        cur['env.UPSTART_SESSION'] = 'unix:abstract=/com/ubuntu/upstart-session/1000/1265';
-    
-        cur['env.USER'] = 'kevin';
-    
-        cur['env.XAUTHORITY'] = '/home/kevin/.Xauthority';
-    
-        cur['env.XDG_CONFIG_DIRS'] = '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg';
-    
-        cur['env.XDG_CURRENT_DESKTOP'] = 'Unity';
-    
-        cur['env.XDG_DATA_DIRS'] = '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop';
-    
-        cur['env.XDG_GREETER_DATA_DIR'] = '/var/lib/lightdm-data/kevin';
-    
-        cur['env.XDG_RUNTIME_DIR'] = '/run/user/1000';
-    
-        cur['env.XDG_SEAT'] = 'seat0';
-    
-        cur['env.XDG_SEAT_PATH'] = '/org/freedesktop/DisplayManager/Seat0';
-    
-        cur['env.XDG_SESSION_DESKTOP'] = 'ubuntu';
-    
-        cur['env.XDG_SESSION_ID'] = 'c3';
-    
-        cur['env.XDG_SESSION_PATH'] = '/org/freedesktop/DisplayManager/Session0';
-    
-        cur['env.XDG_SESSION_TYPE'] = 'x11';
-    
-        cur['env.XDG_VTNR'] = '7';
+        cur['env.XDG_SESSION_ID'] = 'c2';
     
         cur['env.XFILESEARCHPATH'] = '/usr/dt/app-defaults/%L/Dt';
-    
-        cur['env.XMODIFIERS'] = '@im=ibus';
     
         cur['file.encoding'] = 'UTF-8';
     
@@ -181,7 +125,7 @@
     
         cur['java.awt.printerjob'] = 'sun.print.PSPrinterJob';
     
-        cur['java.class.path'] = '/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/java/ant-1.9.6.jar:/usr/share/java/ant-junit-1.9.6.jar';
+        cur['java.class.path'] = '/home/kevin/workspace/Rennschnecke_Example/bin:/usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar';
     
         cur['java.class.version'] = '52.0';
     
@@ -251,11 +195,9 @@
     
         cur['sun.cpu.isalist'] = '';
     
-        cur['sun.desktop'] = 'gnome';
-    
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennschneckeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennschneckeTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher3406346112407482212.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit5076919948455608455.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner RennschneckeTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/kevin/workspace/Rennschnecke_Example/junit/TEST-RennschneckeTest.xml crashfile=/home/kevin/workspace/Rennschnecke_Example/junitvmwatcher6569339903374860171.properties propsfile=/home/kevin/workspace/Rennschnecke_Example/junit8268453328801819688.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -271,11 +213,11 @@
     
         cur['user.dir'] = '/home/kevin/workspace/Rennschnecke_Example';
     
-        cur['user.home'] = '/home/kevin';
+        cur['user.home'] = '/var/lib/jenkins';
     
         cur['user.language'] = 'de';
     
-        cur['user.name'] = 'kevin';
+        cur['user.name'] = 'jenkins';
     
         cur['user.timezone'] = '';
     </script><script type="text/javascript" language="JavaScript">
@@ -321,38 +263,20 @@
 <tr valign="top">
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
-<tr valign="top" class="Pass">
-<td><a title="Display all tests" href="1_RennschneckeTest.html">RennschneckeTest</a></td><td><a title="Display all tests" href="1_RennschneckeTest.html">8</a></td><td>0</td><td>0</td><td>0</td><td>0.068</td><td>2016-07-25T06:33:36</td><td>kevin-VirtualBox</td>
+<tr valign="top" class="Failure">
+<td><a title="Display all tests" href="1_RennschneckeTest.html">RennschneckeTest</a></td><td><a title="Display all tests" href="1_RennschneckeTest.html">8</a></td><td>0</td><td><a title="Display only failures" href="1_RennschneckeTest-fails.html">1</a></td><td>0</td><td>0.130</td><td>2016-07-22T08:24:49</td><td>kevin-VirtualBox</td>
 </tr>
 </table>
-<h2>Tests</h2>
+<h2>Failures</h2>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
 </tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckGetRasse"></a>testCheckGetRasse</td><td>Success</td><td></td><td>0.002</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckGetMaxSp"></a>testCheckGetMaxSp</td><td>Success</td><td></td><td>0.002</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckToString"></a>testCheckToString</td><td>Success</td><td></td><td>0.002</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckGetName"></a>testCheckGetName</td><td>Success</td><td></td><td>0.000</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCreateRennschneckeTestObject"></a>testCreateRennschneckeTestObject</td><td>Success</td><td></td><td>0.000</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckGetStrecke"></a>testCheckGetStrecke</td><td>Success</td><td></td><td>0.000</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckKrieche"></a>testCheckKrieche</td><td>Success</td><td></td><td>0.000</td>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testCheckKonstruktor"></a>testCheckKonstruktor</td><td>Success</td><td></td><td>0.000</td>
+<tr valign="top" class="Failure">
+<td><a name="testCheckGetStrecke"></a>testCheckGetStrecke</td><td>Failure</td><td>N/A<br>
+<br>
+<code>junit.framework.AssertionFailedError<br>	at RennschneckkeTest.testCheckGetStrecke(RennschneckeTest.java:34)<br>
+</code></td><td>0.013</td>
 </tr>
 </table>
 <div class="Properties">
