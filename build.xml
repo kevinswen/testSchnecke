@@ -1,51 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project basedir="." default="run" name="Rennschnecke_Example">
-
-	<target name="cleanup">
-		<delete dir="lib" />
-		<delete dir="reports" />
-	</target>
-	
-	<target name="create" depends="cleanup">
-		<mkdir dir="bin" />
-		<mkdir dir="lib" />
-		<mkdir dir="src" />
-		<mkdir dir="reports" />
-	</target>
-	
-	<target name="copy" depends="create">
-		<copy overwrite="true" todir="lib">
-			<fileset dir="/home/kevin/workspace/Rennschnecke_Example_Kopie/junit" includes="*.jar"></fileset>
-		</copy>
-		<copy overwrite="true" todir="src">
-			<fileset dir="/home/kevin/workspace/Rennschnecke_Example_Kopie/src" includes="*.java"></fileset>
-		</copy>
-	</target>
-	
+<project basedir="." default="compile" name="Rennschnecke_Example">
+    <property environment="env"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
     <path id="JUnit 3.libraryclasspath">
         <pathelement location="../../../../usr/share/eclipse/dropins/jdt/plugins/org.junit_3.8.2.dist/junit.jar"/>
     </path>
-    <path id="Rennschnecke_Example_Kopie.classpath">
+    <path id="Rennschnecke_Example.classpath">
         <pathelement location="bin"/>
         <path refid="JUnit 3.libraryclasspath"/>
     </path>
-	
-	<target name="compile" depends="copy">
-		<javac classpathref="Rennschnecke_Example(kopie).classpath" includeantruntime="true" srcdir="src" destdir="bin" description="Compiling Java files" includes="*.java">
-		</javac>
-	</target>
-	
-	<target name="run" depends="compile">
-		<!--java classpathref="classpath" classname="TestRunner" fork="true"></java>-->
-		<junit haltonfailure="false" printsummary="true">
-			<classpath refid="Rennschnecke_Example_Kopie.classpath"></classpath>
-			<test name="RennenTest" todir="reports"></test>
-			<test name="RennschneckeTest" todir="reports"></test>
-			<formatter type="xml"/>
-		</junit>
-	</target>
-		
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project,junitreport" name="compile"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="run">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    </target>
+    <target name="RennenTest">	
+        <mkdir dir="${junit.output.dir}"/>
+    	<junit fork="yes" printsummary="withOutAndErr" errorProperty="RennenTest.failed" failureProperty="RennenTest.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+      	<fail message="Tests failed. Please see test reports" if="RennenTest.failed" />
+    </target>
+    <target name="Wettbüro_WetteTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="Wettbüro_WetteTest.failed" failureProperty="Wettbüro_WetteTest.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="Wettbüro_WetteTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+      	<fail message="Tests failed. Please see test reports" if="Wettbüro_WetteTest.failed" />
+    </target>
+    <target name="RennschneckeTest.testCreateRennschneckeTestObject">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennschneckeTest.testCreateRennschneckeTestObject.failed" failureProperty="RennschneckeTest.testCreateRennschneckeTestObject.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennschneckeTest.testCreateRennschneckeTestObject.failed" />		
+    </target>
+    <target name="RennschneckeTest.setUp">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennschneckeTest.setUp.failed" failureProperty="RennschneckeTest.setUp.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennschneckeTest.setUp.failed" />		
+    </target>
+    <target name="RennenTest.testToString">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennenTest.testToString.failed" failureProperty="RennenTest.testToString.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennenTest.testToString.failed" />		
+    </target>
+    <target name="AllTests">
+        <parallel threadCount="1" timeout="900000">
+            <antcall target="RennenTest"/>
+            <antcall target="RennschneckeTest.testCreateRennschneckeTestObject"/>
+            <antcall target="RennschneckeTest.setUp"/>
+            <antcall target="RennenTest.testToString"/>
+            <antcall target="RennenTest.testCheckKonstruktor"/>
+            <antcall target="RennschneckeTest"/>
+            <antcall target="RennenTest.testErmittleGewinner"/>
+            <antcall target="Hauptprogramm"/>
+        </parallel>
+    </target>
+    <target name="Hauptprogramm">
+        <java classname="Hauptprogramm" failonerror="true" fork="yes">
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </java>
+    </target>
+    <target name="RennenTest.testCheckKonstruktor">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennenTest.testCheckKonstruktor.failed" failureProperty="RennenTest.testCheckKonstruktor.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennenTest.testCheckKonstruktor.failed" />
+    </target>
+    <target name="RennschneckeTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennschneckeTest.failed" failureProperty="RennschneckeTest.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennschneckeTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennschneckeTest.failed" />		
+    </target>
+    <target name="RennenTest.testErmittleGewinner">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr" errorProperty="RennenTest.testErmittleGewinner.failed" failureProperty="RennenTest.testErmittleGewinner.failed" logfailedtests="yes">
+            <formatter type="xml"/>
+            <test name="RennenTest" todir="${junit.output.dir}"/>
+            <classpath refid="Rennschnecke_Example.classpath"/>
+        </junit>
+    	<fail message="Tests failed. Please see test reports" if="RennenTest.testErmittleGewinner.failed" />		
+    </target>
+    <target depends="AllTests" name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
 </project>
-		
 		
 		
